@@ -16,50 +16,13 @@ numItems = 1000
 
 for a in range(0, numItems):
   outputList.append({
-      'type': 'immersive',
-      'name': 'Software Engineering Immersive',
-      'description':
-        'Build rich, interactive, full-stack apps with key languages and dive into computer science essentials like algorithms, data structures, design patterns, and more.',
-      'hours': '400+',
-      'length': '12 weeks',
-      'schedule': 'Mon-Fri',
-      'topic_slugs': ['Coding', 'Data', 'Design', 'Marketing', 'Business', 'Career Development'],
-      'locations': [
-        'Atlanta',
-        'Austin',
-        'Boston',
-        'Chicago',
-        'Dallas',
-        'Denver',
-        'Detroit',
-        'Houston',
-        'London',
-        'Los Angeles',
-        'Melbourne',
-        'Miami',
-        'Minneapolis',
-        'New York City',
-        'Orlando',
-        'Paris',
-        'Phoenix',
-        'Providence',
-        'Raleigh',
-        'San Diego',
-        'San Francisco',
-        'Seattle',
-        'Singapore',
-        'Stamford',
-        'Sydney',
-        'Toronto',
-        'Washington D.C.',
-      ],
-      'urls': {
-        'campus':
-          'http://generalassemb.ly/education/software-engineering-immersive',
-        'online':
-          'http://generalassemb.ly/education/software-engineering-immersive-remote',
-      },
-    })
+    "index": a,
+    "guid": "20c3e6d3-036e-4714-bd1d-1f5a03fb2be2",
+    "eyeColor": "blue",
+    "phone": "+1 (996) 494-3583",
+    "address": "787 Louis Place, Townsend, Connecticut, 9325",
+    "about": "Qui nulla officia ullamco nisi reprehenderit magna. Est excepteur fugiat ut adipisicing reprehenderit est magna tempor aute elit. Ullamco dolore aliquip velit excepteur ex.\r\n"
+  })
 
 output = json.dumps(outputList, indent = 2)
 outputMinified = json.dumps(outputList, separators = (',', ':'))
