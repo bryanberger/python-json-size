@@ -10,19 +10,59 @@ outputFile = 'output/output.json'
 outputMinFile = 'output/output.min.json'
 outputMinGzipFile = 'output/output.min.json.gz'
 
-dict = {}
+outputList = []
 
 numItems = 1000
 
 for a in range(0, numItems):
-  dict[a] = {
-    'firstname': 'SomeValue',
-    'lastname': 'SomeValue',
-    'favoriteColor': 'SomeColor'
-  }
+  outputList.append({
+      'type': 'immersive',
+      'name': 'Software Engineering Immersive',
+      'description':
+        'Build rich, interactive, full-stack apps with key languages and dive into computer science essentials like algorithms, data structures, design patterns, and more.',
+      'hours': '400+',
+      'length': '12 weeks',
+      'schedule': 'Mon-Fri',
+      'topic_slugs': ['Coding', 'Data', 'Design', 'Marketing', 'Business', 'Career Development'],
+      'locations': [
+        'Atlanta',
+        'Austin',
+        'Boston',
+        'Chicago',
+        'Dallas',
+        'Denver',
+        'Detroit',
+        'Houston',
+        'London',
+        'Los Angeles',
+        'Melbourne',
+        'Miami',
+        'Minneapolis',
+        'New York City',
+        'Orlando',
+        'Paris',
+        'Phoenix',
+        'Providence',
+        'Raleigh',
+        'San Diego',
+        'San Francisco',
+        'Seattle',
+        'Singapore',
+        'Stamford',
+        'Sydney',
+        'Toronto',
+        'Washington D.C.',
+      ],
+      'urls': {
+        'campus':
+          'http://generalassemb.ly/education/software-engineering-immersive',
+        'online':
+          'http://generalassemb.ly/education/software-engineering-immersive-remote',
+      },
+    })
 
-output = json.dumps(dict, indent = 2)
-outputMinified = json.dumps(dict, separators = (',', ':'))
+output = json.dumps(outputList, indent = 2)
+outputMinified = json.dumps(outputList, separators = (',', ':'))
 
 with open(outputFile, 'wb') as outfile:
   outfile.write(output)
