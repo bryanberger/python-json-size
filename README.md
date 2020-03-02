@@ -19,11 +19,12 @@ This script outputs the mock json, minified json, and gzipped json into a local 
 ```
 Number of Items 1000
 
-Estimated Size: 1206KB
-Actual Size: 1206KB
-Estimated Minified Size: 851KB
-Actual Minified Size: 851KB
+Estimated Size: 108KB
+Actual Size: 108KB
+Estimated Minified Size: 80KB
+Actual Minified Size: 80KB
 Estimated Gzip Size: 48KB
+Actual Gzip Size: 2KB
 ```
 
 #### Credits
